@@ -3,6 +3,9 @@
     @author Professor José de Assis
     joseassis.com.br
 */
+/* Importação Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 
 /*
     CSS RESET
@@ -13,8 +16,6 @@
     padding: 0;
 }
 
-/* Importação Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body {
         font-family: 'Open Sans', sans-serif;
