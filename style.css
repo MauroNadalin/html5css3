@@ -39,7 +39,18 @@ body {
     position: fixed;
     right: 10px;
     bottom: 10px;
-   
+
+}
+
+.Botao{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
 
 }
 
@@ -91,6 +102,27 @@ nav ul li a{
     color:#fff;
 }
 
+/* Destaque */
+
+main{
+    height: 75vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main h1{
+    font-size: 2.5em;
+}
+
+main h2{
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+}
+
 /*
 Smartphone landscape - 576px =============================================>
 */
@@ -98,9 +130,15 @@ Smartphone landscape - 576px =============================================>
     
     /* Layout */
     .Container{
-        max-width: 540px;
-       
+        max-width: 540px;       
     }
+
+    /* Destaque */
+
+    main h1, main h2 {
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
 }
 
 /*
@@ -110,10 +148,24 @@ Tablet portrait - 768px ==================================================>
     
     /* Layout */
     .Container{
-        max-width: 720px;
-        
+        max-width: 720px;        
     }
-}
+
+    /* Destaque */
+
+    main{
+        height: 45vh;
+    }
+    main h1{
+        font-size: 5.5em;
+    }
+    main h2{
+        font-size: 2.5em;
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
+    }
+
 
 /*
 Tablet landscape ou monitores antigos - 992px ============================>
@@ -122,8 +174,12 @@ Tablet landscape ou monitores antigos - 992px ============================>
    
     /* Layout */
     .Container{
-        max-width: 960px;
-       
+        max-width: 960px;       
+    }
+
+    /* Destaque */
+    main{
+        height: 70vh;
     }
 }
 
@@ -164,6 +220,7 @@ Pc - 1200px ==============================================================>
     nav ul li{
         float: left;
         border: 0;
+       
 
     }
 
@@ -173,7 +230,7 @@ Pc - 1200px ==============================================================>
 
     nav ul li a:hover{
         color:#c00000;
-        font-weight: bolder;
+        font-weight: 700;
         
     }
 
