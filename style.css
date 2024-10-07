@@ -40,6 +40,11 @@ body {
     
 }
 
+.Flex3{
+    display: flex;
+    flex-direction: column;
+}
+
 /* Topo do Site */
 #topo{
     position: fixed;
@@ -157,6 +162,21 @@ main h2{
     margin-right: 20px;
 }
 
+/* One Page*/
+
+#onepage {
+    padding: 50px 10px;
+}
+#onepage h2{
+    margin-bottom: 10px;
+}
+#onepage p{
+    margin-bottom: 25px;
+}
+#video iframe{
+    width: 340px;
+    height: 191px;
+}
 
 /*
 Smartphone landscape - 576px =============================================>
@@ -172,6 +192,12 @@ Smartphone landscape - 576px =============================================>
 
     main h1, main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+    /* one page */
+
+    #video iframe{
+        width: 560px;
+        height: 315px;
     }
 
 }
@@ -199,7 +225,7 @@ Tablet portrait - 768px ==================================================>
         text-shadow: #000 0.05em 0.05em 0.05em;
     }
 
-    }
+}
 
 
 /*
@@ -279,6 +305,12 @@ Pc - 1200px ==============================================================>
     } 
     #sobre{
         background-attachment: fixed;
+    }
+
+    /* one page */
+    .Flex3{
+        flex-direction: row;
+        align-items: center;
     }
     
 
